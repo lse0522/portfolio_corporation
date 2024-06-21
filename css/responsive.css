@@ -1,0 +1,346 @@
+@media (max-width: 768px){
+  /* Scroll */
+  body{
+    -ms-overflow-style: none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  /* #################### Entire Layout  ######################## */
+  .cd-section{
+    height: auto;
+  }
+  .cd-section > div{
+    height: auto;
+    position: static;
+  }
+  /* #################### Featherlight ######################## */
+  .featherlight .featherlight-content {
+    padding: 0;
+  }
+  .featherlight .featherlight-close-icon {
+    top: 0px;
+    right: 0px;
+    font-size: 20px;
+    background-color: #43564A;
+  }
+  /* #################### Section : Header ######################## */
+  header{
+    height: 60px;
+  }
+  header.nav-active::before {
+    opacity: 0.8;
+  }
+  header.nav-active .logo a{
+    color: #43564A;
+  }
+  header.nav-active .menu span{
+    background-color: #43564A;
+  }
+  .logo{
+    margin-left: 20px;
+  }
+  .logo a{
+    line-height: 60px;
+  }
+  .slogan{
+   display: none; 
+  }
+  .gnb{
+    display: none;
+    transition: 0.5s; 
+  }
+  .gnb a{
+    display: block;
+    font-weight: 200;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .gnb.menu-view{
+    display: block;
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: #43564A;
+    box-shadow:  -5px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+  }
+  .menu{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+  }
+  .menu span{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transition: 0.5s;
+  }
+  .menu span:nth-child(1){
+    top: 0;
+  }
+  .menu span:nth-child(2){
+    top: 50%;
+  }
+  .menu span:nth-child(3){
+    top: 100%;
+  }
+  .menu.active span:nth-child(1){
+    top: 50%;
+    transform: rotate(45deg);
+    background-color: #fff;
+  }
+  .menu.active span:nth-child(2){
+    display: none;
+  }
+  .menu.active span:nth-child(3){
+    top: 50%;
+    transform: rotate(-45deg);
+    background-color: #fff;
+
+  }
+  /* #################### Chat view ######################## */
+  .chat-view{
+    right: 20px;
+    bottom: 30px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  /* #################### Section : home ######################## */
+  .bg{
+    height: 100vh;
+  }
+  .text-box{
+    padding: 0 20px;
+  }
+  .text-box h2{
+    font-size: 20px;
+  }
+  .text-box p{
+    font-size: 12px;
+  }
+  /* #################### Section : product ######################## */
+  .product-inner{
+    height: auto;
+  }
+  .flow-text{
+    display: none;
+  }
+  .product-feature{
+    width: 100%;
+    position:static;
+    transform: none;
+    padding: 40px;
+  }
+  .product-feature h2{
+    font-size: 40px;
+    text-align: center;
+  }
+  .product-items{
+    margin-top: 20px;
+  }
+  .product-items > div{
+    float: none;
+  }
+  .product-item{
+    width: 100%;
+  }
+  .product-item:nth-child(2){
+    margin: 20px 0px;
+  }
+  .back-box p{
+    margin-top: 20px;
+  line-height: 1.7em;
+  }
+  /* #################### Section : about  ######################## */
+  .about-inner{
+    height: auto;
+  }
+  .about-feature{
+    position: static;
+    width: 100%;
+    padding: 60px 20px;
+    transform: none;
+  }
+  .about-info h1{
+    font-size: 40px;
+  }
+  .about-content{
+    margin: 40px 0;
+  }
+  .about-item{
+    float: none;
+    margin: auto;
+    margin-bottom: -40px;
+  }
+  /* #################### Section : project  ######################## */
+  .product-inner{
+    height: auto;
+  }
+  .tab{
+    height: auto;
+  }
+  .tab > div{
+    float: none;
+    width: 100%;
+  }
+  .project-info{
+    padding: 40px 20px;
+  }
+  .project-info::before{
+    top: 10px;
+    font-size: 60px;
+  }
+  .project-info h3{
+    font-size: 20px;
+  }
+  .project-photo img{
+    height: 300px;
+    margin-top: 40px;
+  }
+  .btn{
+    position: static;
+    width: 100%;
+    background-color: #43564A;
+    bottom: 0px;
+  }
+  /* #################### Section : plan  ######################## */
+  .plan-inner{
+    height: auto;
+  }
+  .plan-feature{
+    width: 100%;
+    height: auto;
+    position: static;
+    transform: none;
+    padding: 40px 20px;
+  }
+  .plan-info > div{
+    float: none;
+  }
+  .plan-heading{
+    width: 100%;
+    padding-right: 0;
+  }
+  .plan-photo{
+    width: 100%;
+    margin-top: 30px;
+  }
+  .plan-heading h2,
+  .history-info h2{
+    font-size: 30px;
+  }
+  .history-info div p{
+    padding-right: 0px;
+  }
+  /* #################### Section : news  ######################## */
+  .news-inner{
+    height: auto;
+  }
+  .news-feature{
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    transform: none;
+    background-color: #43564A;
+  }
+  .news-feature ul li{
+    padding: 20px 30px 20px 0px;
+  }
+  .pluse{
+    right: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  .news-content.li-view{
+    max-height: 700px;
+  }
+  .contact-a{
+    margin-bottom: 40px;
+  }
+  /* #################### SubPage : Product  ######################## */
+  .modal{
+    width: 100%;
+    height: auto;
+  }
+  .subproduct-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .product-main{
+    height: 300px;
+    margin-bottom: 0px;
+  }
+  .product-main h1{
+    font-size: 30px;
+  }
+  .subproduct-info > div{
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  .center-child{
+    padding: 20px;
+    order: 1;
+  }
+  .sub-photo{
+    order: 2;
+  }
+  .sub-photo img{
+    width: 100%;
+    height: auto;
+  }
+  .center-child h2{
+    font-size: 20px;
+  }
+  .center-child p{
+    margin-top: 20px;
+  }
+  /* #################### SubPage : Contact  ######################## */
+  .contact-inner{
+    height: auto;
+  }
+  .contact-feature > div{
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  .contact{
+    display: none;
+  }
+  .contact-from{
+    padding: 60px 40px;
+  }
+  .contact-from h3{
+    font-size: 34px;
+  }
+  .send-box button{
+    width: 100%;
+  }
+  /* #################### SubPage : chat  ######################## */
+  .chat-inner{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    border-radius: 0px;
+    padding: 40px 20px;
+  }
+  .chat-close{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    text-align: end;
+  }
+}
